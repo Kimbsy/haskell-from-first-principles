@@ -1,0 +1,62 @@
+λ> 'c' : "hris"
+"chris"
+λ> head "Fooopoo"
+'F'
+λ> tail "Fooopoo"
+"ooopoo"
+λ> take 0 "Fooopoo"
+""
+λ> take 30 "Fooopoo"
+"Fooopoo"
+λ> take 3 "Fooopoo"
+"Foo"
+λ> drop 3 "Fooopoo"
+"opoo"
+λ> drop 30 "Fooopoo"
+""
+λ> drop 0 "Fooopoo"
+"Fooopoo"
+λ> "Fooopoo" !! 0
+'F'
+λ> "Fooopoo" !! 4
+'p'
+λ> head ""
+*** Exception: Prelude.head: empty list
+λ> concat [[1, 2, 3], [4, 5, 6]]
+[1,2,3,4,5,6]
+λ> (++) [1, 2, 3] [4, 5, 6]
+[1,2,3,4,5,6]
+λ> (++) "hello" " world!"
+"hello world!"
+λ> ["hello" ++ " world!"]
+["hello world!"]
+λ> "hello" !! 4
+'o'
+λ> (!!) "hello" 4
+'o'
+λ> take 4 "lovely"
+"love"
+λ> take 3 "awesome"
+"awe"
+λ> concat [[1 * 6], [2 * 6], [3 * 6]]
+[6,12,18]
+λ> "rain" ++ drop 2 "elbow"
+"rainbow"
+λ> 10 * head [1, 2, 3]
+10
+λ> (take 3 "Julie") ++ (tail "yes")
+"Jules"
+λ> (take 3 "Julie") ++ tail "yes"
+"Jules"
+λ> take 3 "Julie" ++ tail "yes"
+"Jules"
+λ> concat [tail [1, 2, 3], tail [4, 5, 6], tail [7, 8, 9]]
+[2,3,5,6,8,9]
+λ> drop 1 "Hello world!"
+"ello world!"
+λ> "Curry is awesome" ++ "!"
+"Curry is awesome!"
+λ> "Curry is awesome!" !! 4
+'y'
+λ> drop 9 "Curry is awesome!"
+"awesome!"
